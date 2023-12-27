@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <% if (!locals.numberOfLetters) { %>
+    <h1>check reason for everything 🧐</h1>
+    <!-- Form is displayed only when locals.numberOfLetters is not available -->
+    <form action="/submit" method="POST">
+      <input type="text" name="fName" placeholder="Your name">
+      <input type="text" name="lName" placeholder="Crush name">
+      <input type="submit" value="OK">
+    </form>
+    <% } else { %>
+      <h1>Thala for reson</h1>
+      <img src="200.gif" alt="Thala GIF">
+      <% } %>
+</body>
+
+</html>
